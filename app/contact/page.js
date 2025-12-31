@@ -41,8 +41,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">Phone</h3>
-                    <a href="tel:+254XXXXXXXXX" className="text-primary text-lg font-semibold hover:underline">
-                      +254 XXX XXX XXX
+                    <a href="tel:+254754450068" className="text-primary text-lg font-semibold hover:underline">
+                      +254754450068
                     </a>
                     <p className="text-gray-600 mt-2">Available 24/7 for inquiries</p>
                     <p className="text-sm text-gray-500 mt-1">Call us anytime for immediate assistance</p>
@@ -60,8 +60,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">Email</h3>
-                    <a href="mailto:info@royalmindventures.co.ke" className="text-primary text-lg font-semibold hover:underline break-all">
-                      info@royalmindventures.co.ke
+                    <a href="mailto:royalmindventures@gmail.com" className="text-primary text-lg font-semibold hover:underline break-all">
+                      royalmindventures@gmail.com 
+
                     </a>
                     <p className="text-gray-600 mt-2">We respond within 24 hours</p>
                     <p className="text-sm text-gray-500 mt-1">Send us detailed inquiries via email</p>
@@ -79,8 +80,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">WhatsApp</h3>
-                    <a href="https://wa.me/254XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-grey-500 text-lg font-semibold hover:underline">
-                      +254 XXX XXX XXX
+                    <a href="https://wa.me/254754450068" target="_blank" rel="noopener noreferrer" className="text-grey-500 text-lg font-semibold hover:underline">
+                      +254 754450068
                     </a>
                     <p className="text-gray-600 mt-2">Quick responses via chat</p>
                     <p className="text-sm text-gray-500 mt-1">Fastest way to reach us instantly</p>

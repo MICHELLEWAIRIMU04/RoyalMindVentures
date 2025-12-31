@@ -26,8 +26,8 @@ export default function Footer() {
               Delivering high-quality sound, lighting, and entertainment experiences.
             </p>
             <div className="space-y-2 text-gray-400">
-              <p>📞 Phone: +254 XXX XXX XXX</p>
-              <p>📧 Email: info@royalmindventures.co.ke</p>
+              <p>📞 Phone: +254 754450068</p>
+              <p>📧 Email: royalmindventures@gmail.com</p>
               <p>📍 Location: Nairobi, Kenya</p>
             </div>
           </div>
