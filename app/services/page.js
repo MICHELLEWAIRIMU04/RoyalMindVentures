@@ -10,7 +10,7 @@ export default function Services() {
     {
       title: 'PA System Hire',
       description: 'High-performance PA systems for all occasions. Whether you\'re hosting an intimate gathering or a large-scale event, our state-of-the-art public address systems deliver crystal-clear sound that reaches every corner of your venue.',
-      image: '/images/pa-system.jpg',
+      image: '/images/gallery-5.jpg',
       icon: '🔊',
     },
     {
