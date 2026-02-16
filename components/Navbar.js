@@ -15,33 +15,43 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 border-b border-neutral-50">
       <div className="container-custom">
         <div className="flex justify-between items-center h-20">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-primary">
-              Royal Mind Ventures
-            </h1>
+          <Link href="/" className="flex items-center group">
+            <div className="flex flex-col">
+              <h1 className="text-2xl md:text-3xl font-bold text-neutral-900 group-hover:text-primary-500 transition-colors duration-200">
+                Royal Mind Ventures
+              </h1>
+              <span className="text-xs text-primary-500 font-medium tracking-wide">PROFESSIONAL AUDIO SOLUTIONS</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-primary font-medium transition-colors duration-200"
+                className="text-neutral-700 hover:text-primary-500 font-medium transition-colors duration-200 relative group"
               >
                 {link.name}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+            <Link
+              href="/contact"
+              className="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+            >
+              Get Quote
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 focus:outline-none"
+            className="md:hidden text-neutral-700 focus:outline-none focus:text-primary-500 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg
@@ -64,17 +74,24 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 border-t border-neutral-50">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="block py-2 text-gray-700 hover:text-primary font-medium transition-colors duration-200"
+                className="block py-3 text-neutral-700 hover:text-primary-500 hover:bg-primary-50 px-4 rounded-lg font-medium transition-all duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
+            <Link
+              href="/contact"
+              className="block mt-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-4 py-3 rounded-lg text-center transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Get Quote
+            </Link>
           </div>
         )}
       </div>

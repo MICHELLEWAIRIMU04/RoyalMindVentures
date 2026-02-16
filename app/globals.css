@@ -1,14 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Colors */
+    --color-primary-50: #e6f4ff;
+    --color-primary-100: #bae0ff;
+    --color-primary-400: #40a9ff;
+    --color-primary-500: #1890ff;
+    --color-primary-600: #0050b3;
+    
+    --color-accent-400: #f87171;
+    --color-accent-500: #ef4444;
+    --color-accent-600: #dc2626;
+    
+    --color-neutral-white: #ffffff;
+    --color-neutral-off-white: #f8fafc;
+    --color-neutral-50: #f1f5f9;
+    --color-neutral-100: #e2e8f0;
+    --color-neutral-400: #94a3b8;
+    --color-neutral-600: #475569;
+    --color-neutral-800: #1e293b;
+    --color-neutral-900: #0f172a;
+    
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
   html {
     scroll-behavior: smooth;
+    font-family: var(--font-sans);
   }
   
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-neutral-white text-neutral-600;
+    font-family: var(--font-sans);
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-neutral-900 font-bold;
+  }
+  
+  h1 {
+    @apply text-h1;
+  }
+  
+  h2 {
+    @apply text-h2;
+  }
+  
+  h3 {
+    @apply text-h3;
+  }
+  
+  p {
+    @apply text-body leading-relaxed;
+  }
+  
+  a {
+    @apply transition-colors duration-200;
   }
 }
 
@@ -17,19 +71,90 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  /* Button Styles */
   .btn-primary {
-    @apply bg-highlight hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3 px-8 rounded-lg 
+           transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl
+           inline-block text-center;
   }
 
   .btn-secondary {
-    @apply bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2 border-primary;
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg 
+           transition-all duration-300 shadow-md hover:shadow-lg
+           inline-block text-center;
+  }
+  
+  .btn-outline {
+    @apply bg-white hover:bg-primary-50 text-primary-500 font-semibold py-3 px-8 rounded-lg 
+           transition-all duration-300 border-2 border-primary-500 hover:border-primary-600
+           inline-block text-center;
   }
 
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold text-primary mb-4;
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .card-bordered {
+    @apply bg-white rounded-xl border-2 border-neutral-50 hover:border-primary-100 
+           transition-all duration-300 overflow-hidden;
   }
 
-  .section-subtitle {
-    @apply text-lg text-gray-600 mb-12 max-w-2xl mx-auto;
+  /* Section Styles */
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+  
+  .section-light {
+    @apply bg-neutral-off-white;
+  }
+  
+  .section-primary {
+    @apply bg-gradient-to-br from-primary-500 to-primary-600 text-white;
+  }
+  
+  .section-dark {
+    @apply bg-neutral-900 text-white;
+  }
+
+  /* Typography Utilities */
+  .heading-display {
+    @apply text-display text-neutral-900 font-bold leading-tight;
+  }
+  
+  .heading-primary {
+    @apply text-h1 text-neutral-900 font-bold;
+  }
+  
+  .heading-secondary {
+    @apply text-h2 text-neutral-900 font-bold mb-4;
+  }
+  
+  .heading-tertiary {
+    @apply text-h3 text-neutral-800 font-semibold;
+  }
+  
+  .text-muted {
+    @apply text-neutral-600;
+  }
+  
+  /* Link Styles */
+  .link-primary {
+    @apply text-primary-500 hover:text-primary-600 font-medium underline-offset-4 hover:underline;
+  }
+  
+  .link-accent {
+    @apply text-accent-500 hover:text-accent-600 font-medium underline-offset-4 hover:underline;
+  }
+
+  /* Gradient Text */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
