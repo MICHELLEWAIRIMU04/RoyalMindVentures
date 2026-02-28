@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="relative h-96 md:h-[550px]">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary-600 to-transparent rounded-2xl opacity-60" />
             <Image
-              src="/images/gallery-15.jpg"
+              src="/images/gallery-19.jpg"
               alt="Professional audio visual equipment and event setup"
               fill
               className="object-cover rounded-2xl shadow-2xl ring-4 ring-white ring-opacity-20"

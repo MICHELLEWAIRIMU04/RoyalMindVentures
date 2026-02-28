@@ -23,17 +23,17 @@ export default function Services() {
     {
       title: 'Live Sound Engineering',
       description: 'Experienced engineers to run your event audio with precision and expertise. Our skilled sound engineers ensure perfect audio balance, seamless transitions, and professional sound management throughout your event.',
-      image: '/images/gallery-9.jpg',
+      image: '/images/gallery-16.jpg',
     },
     {
       title: 'Event & Stage Lighting',
       description: 'Dynamic lighting that enhances every moment of your event. From subtle ambient lighting to dramatic moving-head stage effects, our professional lighting solutions create the perfect visual atmosphere to complement your theme.',
-      image: '/images/gallery-2.jpg',
+      image: '/images/gallery-17.jpg',
     },
     {
       title: 'LED Screen & Projector Hire',
       description: 'High-quality visual support for presentations and performances. Our LED screens and professional 4K projectors ensure your visual content is displayed with stunning clarity — perfect for corporate presentations, live event broadcasts, or entertainment.',
-      image: '/images/gallery-3.jpg',
+      image: '/images/gallery-18.jpg',
     },
   ]
 
