@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Contact Us - Royal Mind Ventures',
-  description: 'Get in touch with Royal Mind Ventures for professional audio services. Call, email, or reach us on WhatsApp.',
+  title: 'Contact Us - Royal AV Rentals & Solutions',
+  description: 'Get in touch with Royal AV Rentals & Solutions for professional audio services. Call, email, or reach us on WhatsApp.',
 }
 
 export default function Contact() {

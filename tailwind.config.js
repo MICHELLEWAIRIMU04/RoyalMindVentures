@@ -8,19 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Sky Blue (Primary)
+        // Deep Violet (Primary) — premium, bold, modern
         primary: {
-          50: '#e6f4ff',
-          100: '#bae0ff',
-          400: '#40a9ff',
-          500: '#1890ff', // Main brand color
-          600: '#0050b3',
+          50: '#f5f3ff',
+          100: '#ede9fe',
+          400: '#a78bfa',
+          500: '#7c3aed', // Main brand color – deep violet
+          600: '#5b21b6',
         },
-        // Red (Accent)
+        // Amber / Gold (Accent) — warm, energetic CTA
         accent: {
-          400: '#f87171',
-          500: '#ef4444', // Main CTA color
-          600: '#dc2626',
+          400: '#fbbf24',
+          500: '#f59e0b', // Main CTA color – warm gold
+          600: '#d97706',
         },
         // Neutrals
         neutral: {

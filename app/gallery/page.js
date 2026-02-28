@@ -1,7 +1,7 @@
 import GalleryGrid from '@/components/GalleryGrid'
 
 export const metadata = {
-  title: 'Gallery - Royal Mind Ventures',
+  title: 'Gallery - Royal AV Rentals & Solutions',
   description: 'View photos from events we\'ve supported including weddings, corporate events, concerts, and more.',
 }
 

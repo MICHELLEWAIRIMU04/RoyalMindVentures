@@ -22,9 +22,9 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <div className="flex flex-col">
               <h1 className="text-2xl md:text-3xl font-bold text-neutral-900 group-hover:text-primary-500 transition-colors duration-200">
-                Royal Mind Ventures
+                Royal AV Rentals & Solutions
               </h1>
-              <span className="text-xs text-primary-500 font-medium tracking-wide">PROFESSIONAL AUDIO SOLUTIONS</span>
+              <span className="text-xs text-primary-500 font-medium tracking-wide">Audio Visual & Events Experts</span>
             </div>
           </Link>
 
